@@ -6,17 +6,7 @@ var Word = function(word) {
     for (let i=0; i < this.characters.length; i++) {
         this.letters[i] = new Letter (this.characters[i]);
     }
-    // this.letterObjects = function() {
-    //     let objects = [];
-    //     for (let i=0; i < this.characters.length; i++) {
-    //         if (this.characters[i] !== " ") {
-    //             let letter = new Letter (this.characters[i]);
-    //             objects.push(letter);
-    //         }
-                
-    //     }
-    //     console.log(objects);
-    // };
+    
     this.stringWord = function() {
         // create empty string that will hold concatenated letters/underscores
         // loop through letters objects array and call toString for each and append to empty string
