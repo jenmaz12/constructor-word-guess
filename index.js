@@ -27,7 +27,8 @@ function guessing() {
 
 function startGame() {
     currentWord = new Word(wordBank[Math.floor(Math.random() * (wordBank.length - 1))]);
-    console.log(currentWord.stringWord());    
+    console.log(currentWord.stringWord());
+    guessing();    
 };
 
 function playAgain() {
@@ -52,4 +53,4 @@ function playAgain() {
 }
 
 startGame();
-guessing();
+
