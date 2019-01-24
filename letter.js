@@ -16,7 +16,7 @@ var Letter = function(char) {
         }
     };
     this.changeGuessed = function(letter) {
-        if (letter === this.char) {
+        if (letter === this.char.toLowerCase()) {
             this.guessed = true;
         }
     }

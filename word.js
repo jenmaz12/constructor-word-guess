@@ -1,7 +1,7 @@
 var Letter = require("./letter.js");
 
 var Word = function(word) {
-    this.characters = word.toLowerCase().split("");
+    this.characters = word.split("");
     this.letters = [];
     for (let i=0; i < this.characters.length; i++) {
         this.letters[i] = new Letter (this.characters[i]);
